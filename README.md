@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + Vite Tutorial
 
 This tutorial will guide you through setting up a new React project using Vite, a modern build tool that provides a faster and leaner development experience.
@@ -210,3 +211,6 @@ If you encounter any issues:
 4. Ensure all dependencies are up to date
 
 Happy coding! 🚀 
+=======
+# OrchidFE_SBA301
+>>>>>>> 88b094876a326a47e56e233941acf996fad77ebf
