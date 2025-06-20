@@ -1,0 +1,170 @@
+/* OrchidAdmin.css */
+
+.orchid-admin-container {
+  margin-top: 40px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #34495e;
+  text-align: center;
+}
+
+.add-button {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #2980b9;
+  color: white;
+  transform: scale(1.05);
+}
+
+.orchid-table {
+  margin-top: 30px;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+
+.orchid-table th,
+.orchid-table td {
+  text-align: center;
+  padding: 12px;
+  font-size: 1.1rem;
+}
+
+.orchid-table th {
+  background-color: #2980b9;
+  color: white;
+}
+
+.orchid-table tbody tr {
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+.orchid-table tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+.orchid-table tbody td .orchid-image {
+  border-radius: 8px;
+}
+
+.action-button {
+  font-size: 1rem;
+  padding: 5px 15px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.action-button:hover {
+  transform: scale(1.05);
+}
+
+.action-button.me-2 {
+  margin-right: 10px;
+}
+
+.hover\:bg-gray-50:hover {
+  background-color: #f8f8f8;
+}
+
+.modal-header {
+  background-color: #2980b9;
+  color: white;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+}
+
+.modal-footer .cancel-button,
+.modal-footer .save-button {
+  font-size: 1.1rem;
+  padding: 8px 20px;
+  border-radius: 25px;
+}
+
+.cancel-button {
+  background-color: #bdc3c7;
+}
+
+.save-button {
+  background-color: #2980b9;
+  color: white;
+}
+
+.save-button:hover,
+.cancel-button:hover {
+  transform: scale(1.05);
+}
+
+.custom-switch .form-check-input:checked {
+  background-color: #2980b9;
+  border-color: #2980b9;
+}
+
+.custom-switch .form-check-label {
+  font-weight: 600;
+}
+
+.form-control {
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.text-danger {
+  font-size: 0.9rem;
+  color: #e74c3c;
+  margin-top: 5px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-primary {
+  color: #2980b9;
+}
+
+.shadow-sm {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 767px) {
+  .orchid-table th,
+  .orchid-table td {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+/* OrchidAdmin.css */
+
+/* Table image size adjustment */
+.orchid-table tbody td .orchid-image {
+  border-radius: 8px;
+  width: 80px;  /* Adjust the width of the image */
+  height: 80px; /* Maintain the aspect ratio */
+  object-fit: cover; /* Ensure the image fits nicely in the box */
+  margin: 0 auto; /* Center the image within the table cell */
+}
+
+/* Optional: Adjust table cell size to match new image size */
+.orchid-table th,
+.orchid-table td {
+  text-align: center;
+  padding: 12px;
+  font-size: 1.1rem;
+}
+
+/* The rest of the CSS remains the same */

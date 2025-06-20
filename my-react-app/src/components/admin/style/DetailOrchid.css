@@ -1,0 +1,216 @@
+/* style/DetailOrchid.css */
+
+/* Variables */
+:root {
+    --primary-color: #4a90e2;
+    --primary-hover: #357abd;
+    --text-primary: #2c3e50;
+    --text-secondary: #7f8c8d;
+    --background-light: #f8f9fa;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --border-radius: 12px;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* General container */
+.detail-container {
+    margin-top: 2rem;
+    padding: 0 1.5rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    transition: var(--transition);
+    background: white;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.card-body {
+    padding: 2rem;
+    background-color: var(--background-light);
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.card-text strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.card-img-top {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+    transition: var(--transition);
+}
+
+.card-img-top:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+/* Quantity Section */
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+button {
+    border-radius: 8px;
+    transition: var(--transition);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+button:disabled {
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.25);
+}
+
+input[type="number"] {
+    text-align: center;
+    width: 60px;
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+    background-color: white;
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+input[type="number"]:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
+}
+
+input[type="number"]:hover {
+    border-color: #ced4da;
+}
+
+/* Add to Cart Button */
+button.primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+button.primary:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+button.primary:active {
+    transform: translateY(0);
+}
+
+/* Error/Alert Styles */
+.alert {
+    margin-top: 1.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    background-color: #fff5f5;
+    color: #e53e3e;
+    font-size: 1rem;
+    font-weight: 500;
+    border-left: 4px solid #e53e3e;
+    box-shadow: var(--shadow-sm);
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .detail-container {
+        margin-top: 1rem;
+        padding: 0 1rem;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1.75rem;
+    }
+
+    .card-img-top {
+        height: 250px;
+    }
+
+    .d-flex {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+
+    input[type="number"] {
+        width: 100%;
+        max-width: 120px;
+        margin: 0 auto;
+    }
+
+    button.primary {
+        width: 100%;
+        padding: 0.75rem 1rem;
+    }
+}
+
+/* Animation for card appearance */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.5s ease-out;
+}

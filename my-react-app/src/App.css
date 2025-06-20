@@ -1,0 +1,20 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 0;
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+/* Remove any default margins and padding */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Add any additional global styles here */

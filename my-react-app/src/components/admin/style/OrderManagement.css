@@ -1,0 +1,10 @@
+.order-management-container {
+    display: block;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}

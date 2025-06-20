@@ -1,0 +1,53 @@
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #2196F3, #21CBF3);
+  }
+  
+  .form-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+  }
+  
+  .form-title {
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .form-subtitle {
+    color: #666;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .form-link {
+    color: #2196F3;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .form-link:hover {
+    text-decoration: underline;
+  }
+  
+  .form-footer {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .toggle-form {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .password-requirements {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+
+  

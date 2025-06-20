@@ -1,0 +1,62 @@
+.navbar {
+  padding: 0.5rem 1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.brand-icon {
+  margin-right: 0.5rem;
+}
+
+/* Đẩy các mục navbar và nút hành động sang phải trên màn hình lớn */
+@media (min-width: 992px) {
+  .navbar-nav-right {
+    margin-left: auto !important;
+  }
+  .right-actions {
+    margin-left: 1rem;
+  }
+  .navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navbar-collapse > div {
+    justify-content: flex-end;
+  }
+}
+
+/* Đảm bảo căn phải trên màn hình nhỏ khi collapse */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .navbar-nav-right {
+    text-align: right;
+    width: auto;
+  }
+  .right-actions {
+    justify-content: flex-end;
+    width: auto;
+  }
+  .navbar-nav-right .nav-item {
+    display: inline-block;
+  }
+}
+
+/* Tùy chỉnh cho cart và login button */
+.cart-icon {
+  position: relative;
+}
+
+.badge-notification {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
